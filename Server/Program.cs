@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 
 
-
+//connects to local database and updates it
 class Program
 {
     static void Main(string[] args)

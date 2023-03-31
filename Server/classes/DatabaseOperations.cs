@@ -1,3 +1,4 @@
+//Operations on SQL database, currently works locally
 using System;
 using MySql.Data.MySqlClient;
 
