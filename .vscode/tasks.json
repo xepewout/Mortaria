@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Server/Server.csproj",
+                "${workspaceFolder}/Mortaria.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Server/Server.csproj",
+                "${workspaceFolder}/Mortaria.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/Server/Server.csproj"
+                "${workspaceFolder}/Mortaria.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
