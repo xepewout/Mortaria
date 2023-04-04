@@ -2,6 +2,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Mortaria.Data;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Authorization;
+using Mortaria.Authorization;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.Extensions.Options;
 
 
 
@@ -19,8 +24,21 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("HasSubscription", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+        policy.Requirements.Add(new SubscriptionRequirement());
+    });
+});
+builder.Services.AddSingleton<IAuthorizationHandler, SubscriptionHandler>();
+builder.Services.AddSingleton<IEmailSender, DummyEmailSender>();
+
 
 
 var app = builder.Build();
@@ -37,6 +55,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapRazorPages();
 app.MapControllers();

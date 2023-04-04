@@ -1,11 +1,31 @@
 @using Microsoft.AspNetCore.Identity
-
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
+@inject RoleManager<IdentityRole> RoleManager
+
+@functions {
+    private async Task<bool> UserIsInRoleAsync(IdentityUser user, string roleName)
+    {
+        return await UserManager.IsInRoleAsync(user, roleName);
+    }
+}
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
+    var user = await UserManager.GetUserAsync(User);
+    var isBasicUser = await UserIsInRoleAsync(user, "BasicUser");
+    var isPremiumUser = await UserIsInRoleAsync(user, "PremiumUser");
+
+    if (isBasicUser || isPremiumUser)
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/maiCRM/CustomerList">Customer List</a>
+        </li>
+    }
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Upgrade">Upgrade</a>
+    </li>
     <li class="nav-item">
         <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
     </li>
@@ -22,6 +42,9 @@ else
     </li>
     <li class="nav-item">
         <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Upgrade">Upgrade</a>
     </li>
 }
 </ul>

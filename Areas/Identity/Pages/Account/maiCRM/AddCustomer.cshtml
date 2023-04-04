@@ -1,0 +1,65 @@
+﻿@page
+@model Mortaria.Areas.Identity.Pages.Account.maiCRM.AddCustomerModel
+@{
+    ViewData["Title"] = "Add Customer";
+}
+
+<h2>Add Customer</h2>
+
+<<form method="post" asp-action="AddCustomer">
+>
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Customer.Name"></label>
+        <input asp-for="Customer.Name" class="form-control" />
+        <span asp-validation-for="Customer.Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Customer.PhoneNumber"></label>
+        <input asp-for="Customer.PhoneNumber" class="form-control" />
+        <span asp-validation-for="Customer.PhoneNumber" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Customer.Email"></label>
+        <input asp-for="Customer.Email" class="form-control" />
+        <span asp-validation-for="Customer.Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Customer.Address"></label>
+        <input asp-for="Customer.Address" class="form-control" />
+        <span asp-validation-for="Customer.Address" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Customer.Notes"></label>
+        <input asp-for="Customer.Notes" class="form-control" />
+        <span asp-validation-for="Customer.Notes" class="text-danger"></span>
+    </div>
+
+    
+    <div class="form-group">
+        <label asp-for="Customer.CompanyName" class="control-label"></label>
+        <input asp-for="Customer.CompanyName" class="form-control" />
+        <span asp-validation-for="Customer.CompanyName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Customer.LastAppointment" class="control-label"></label>
+        <input asp-for="Customer.LastAppointment" class="form-control" />
+        <span asp-validation-for="Customer.LastAppointment" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Customer.NextAppointment" class="control-label"></label>
+        <input asp-for="Customer.NextAppointment" class="form-control" />
+        <span asp-validation-for="Customer.LastAppointment" class="text-danger"></span>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Add Customer</button>
+</form>
+
