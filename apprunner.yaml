@@ -2,12 +2,7 @@ version: 1.0
 runtime: custom
 build:
   commands:
-    - 'apt-get update'
-    - 'apt-get install -y wget apt-transport-https'
-    - 'wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb'
-    - 'dpkg -i packages-microsoft-prod.deb'
-    - 'apt-get update'
-    - 'apt-get install -y dotnet-sdk-7.0'
+    - curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel STS 
     - 'dotnet restore'
     - 'dotnet build --configuration Release'
     - 'dotnet publish --configuration Release --output ./output'
