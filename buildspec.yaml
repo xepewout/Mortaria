@@ -1,9 +1,0 @@
-version: 1.0
-runtime: custom
-build:
-  commands:
-    - curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel STS 
-    - 'dotnet restore'
-    - 'dotnet build --configuration Release'
-    - 'dotnet publish --configuration Release --output ./output'
-start_command: 'dotnet ./output/Mortaria.dll'
