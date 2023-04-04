@@ -1,0 +1,12 @@
+@page
+@model UpgradeModel
+@{
+    ViewData["Title"] = "Upgrade";
+}
+
+<h1>Upgrade</h1>
+
+<form method="post">
+    <input type="submit" asp-page-handler="BuyBasic" value="Buy Basic Plan" />
+    <input type="submit" asp-page-handler="BuyPremium" value="Buy Premium Plan" />
+</form>

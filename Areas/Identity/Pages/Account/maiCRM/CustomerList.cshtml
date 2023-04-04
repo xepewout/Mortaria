@@ -1,0 +1,41 @@
+@page
+@model Mortaria.Areas.Identity.Pages.Account.maiCRM.CustomerListModel
+@{
+    ViewData["Title"] = "Customer List";
+}
+
+<h1>Customer List</h1>
+
+<form method="post" asp-page="AddCustomer">
+        <input type="submit" value="Add Customer" class="btn btn-primary" />
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Last Appointment</th>
+            <th>Next Appointment</th>
+            <th>Notes</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Company Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model.Customers)
+        {
+            <tr>
+                <td>@customer.Name</td>
+                <td>@customer.LastAppointment</td>
+                <td>@customer.NextAppointment</td>
+                <td>@customer.Notes</td>
+                <td>@customer.PhoneNumber</td>
+                <td>@customer.Email</td>
+                <td>@customer.Address</td>
+                <td>@customer.CompanyName</td>
+            </tr>
+        }
+    </tbody>
+</table>
