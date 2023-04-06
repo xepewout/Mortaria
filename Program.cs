@@ -1,23 +1,20 @@
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using Mortaria.Data;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authorization;
-using Mortaria.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
-using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore;
+using Mortaria.Authorization;
+using Mortaria.Data;
 
 
 
 var builder = WebApplication.CreateBuilder(args);
- // Add this line to print the connection string to the console
+// Add this line to print the connection string to the console
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
-    
+
 //razor pages builder: builder.Services.AddRazorPages(options => options.Conventions.AddAreaPageRoute("Identity", "/Account/Register", "Register"));
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

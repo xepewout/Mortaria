@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 
 // Your Customer class code
-namespace Mortaria.Data{
+namespace Mortaria.Data
+{
     public class Customer
     {
         public int Id { get; set; }

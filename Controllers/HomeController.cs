@@ -1,6 +1,6 @@
-﻿using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Mortaria.Models;
+using System.Diagnostics;
 
 namespace Mortaria.Controllers;
 
