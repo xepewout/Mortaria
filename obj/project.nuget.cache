@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "k6CKilX3uGdJjxBV3pEGPS6VUlEm4ULNkqmbjT7e6X3ygF+ky3I8Ce+jp4m1EsSZAnhG5J3mTbtpbi2Yen4lwQ==",
+  "dgSpecHash": "9+yaMPIsc08gcvoSrTP3Lt0JyBVeCglwZawZVAogTbDMjliOPbagAr7E2qft6X26FvYDiSOIthxyCT6ipKnCZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\Mortaria.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,8 @@
     "C:\\Users\\jorry\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.4\\microsoft.aspnetcore.cryptography.keyderivation.7.0.4.nupkg.sha512",
     "C:\\Users\\jorry\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.4\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.4.nupkg.sha512",
     "C:\\Users\\jorry\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.4\\microsoft.aspnetcore.identity.ui.7.0.4.nupkg.sha512",
+    "C:\\Users\\jorry\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\jorry\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\7.0.4\\microsoft.aspnetcore.mvc.razor.runtimecompilation.7.0.4.nupkg.sha512",
     "C:\\Users\\jorry\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "C:\\Users\\jorry\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\jorry\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",

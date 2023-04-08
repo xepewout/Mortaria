@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 
-namespace Mortaria.Areas.Identity.Pages.Account
+namespace Mortaria.Areas.Identity.Pages.Account.Login
 {
     public class LoginModel : PageModel
     {

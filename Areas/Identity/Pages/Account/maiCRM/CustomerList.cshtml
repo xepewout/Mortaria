@@ -1,41 +1,37 @@
 @page
 @model Mortaria.Areas.Identity.Pages.Account.maiCRM.CustomerListModel
 @{
-    ViewData["Title"] = "Customer List";
+    ViewData["Title"] = "Customers";
 }
 
-<h1>Customer List</h1>
+<h1>@ViewData["Title"]</h1>
 
-<form method="post" asp-page="AddCustomer">
-        <input type="submit" value="Add Customer" class="btn btn-primary" />
-</form>
+<a class="btn btn-primary" asp-page="./AddCustomer">Add Customer</a>
 
 <table class="table">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Last Appointment</th>
-            <th>Next Appointment</th>
-            <th>Notes</th>
-            <th>Phone Number</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Business Phone</th>
             <th>Email</th>
-            <th>Address</th>
-            <th>Company Name</th>
+            <th>Appointments</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
         @foreach (var customer in Model.Customers)
         {
             <tr>
-                <td>@customer.Name</td>
-                <td>@customer.LastAppointment</td>
-                <td>@customer.NextAppointment</td>
-                <td>@customer.Notes</td>
-                <td>@customer.PhoneNumber</td>
+                <td><a asp-page="./CustomerDetails" asp-route-id="@customer.Id">@customer.FirstName</a></td>
+                <td>@customer.LastName</td>
+                <td>@customer.BusinessPhone</td>
                 <td>@customer.Email</td>
-                <td>@customer.Address</td>
-                <td>@customer.CompanyName</td>
+                <td>@customer.Appointments.Count</td>
             </tr>
         }
     </tbody>
 </table>
+
+
+

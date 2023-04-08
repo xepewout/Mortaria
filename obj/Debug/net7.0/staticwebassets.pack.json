@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\Mortaria.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
       "Id": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\wwwroot\\js\\home.js",
+      "PackagePath": "staticwebassets\\js\\home.js"
     },
     {
       "Id": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\wwwroot\\js\\site.js",

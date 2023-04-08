@@ -1,5 +1,5 @@
 ﻿@page
-@model RegisterModel
+@model Mortaria.Areas.Identity.Pages.Account.Login.RegisterModel
 @{
     ViewData["Title"] = "Register";
 }
@@ -17,6 +17,12 @@
                 <label asp-for="Input.Email">Email</label>
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.BusinessName" class="form-control" autocomplete="business" aria-required="true" placeholder="Business Name"/>
+                <label asp-for="Input.BusinessName">Business Name</label>
+                <span asp-validation-for="Input.BusinessName" class="text-danger"></span>
+            </div>
+
             <div class="form-floating mb-3">
                 <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
                 <label asp-for="Input.Password">Password</label>

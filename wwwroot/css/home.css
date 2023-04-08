@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .section {
+    width: 30%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
+    position: relative;
+  }
+  
+  .section:hover {
+    cursor: pointer;
+    background-color: #eee;
+  }
+  

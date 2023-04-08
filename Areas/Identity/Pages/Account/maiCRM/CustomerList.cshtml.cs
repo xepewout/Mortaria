@@ -28,10 +28,36 @@ namespace Mortaria.Areas.Identity.Pages.Account.maiCRM
             }
 
             Customers = await _context.Customers
-           .Include(c => c.User)
+            .Where(c => c.UserId == user.Id)
            .ToListAsync();
 
             return Page();
         }
+        public async Task<IActionResult> OnPostAddCustomerAsync(Customer newCustomer)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+            }
+
+            if (ModelState.IsValid)
+            {
+                newCustomer.UserId = user.Id;
+                _context.Customers.Add(newCustomer);
+                await _context.SaveChangesAsync();
+
+                return RedirectToPage("./CustomerList");
+            }
+
+            // Reload the list of customers and display the form with validation errors.
+            Customers = await _context.Customers
+                .Where(c => c.UserId == user.Id)
+                .ToListAsync();
+
+            return Page();
+        }
+
     }
+    
 }

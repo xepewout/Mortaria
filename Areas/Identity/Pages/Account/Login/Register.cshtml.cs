@@ -8,8 +8,9 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
+using Mortaria.Data;
 
-namespace Mortaria.Areas.Identity.Pages.Account
+namespace Mortaria.Areas.Identity.Pages.Account.Login
 {
     public class RegisterModel : PageModel
     {
@@ -19,13 +20,15 @@ namespace Mortaria.Areas.Identity.Pages.Account
         private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly ApplicationDbContext _context;
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
             IUserStore<IdentityUser> userStore,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            ApplicationDbContext context)
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -33,6 +36,7 @@ namespace Mortaria.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _context = context;
         }
 
         /// <summary>
@@ -87,6 +91,10 @@ namespace Mortaria.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
+            [Required]
+            [Display(Name = "Business Name")]
+            public string BusinessName { get; set; }
         }
 
 
@@ -108,6 +116,14 @@ namespace Mortaria.Areas.Identity.Pages.Account
                     // Assign the FreeUser role to the new user
                     await _userManager.AddToRoleAsync(user, "FreeUser");
 
+                     var business = new Business
+                        {
+                            Name = Input.BusinessName,
+                            UserId = user.Id // Assuming you have a UserId property in your Business model
+                        };
+                        _context.Businesses.Add(business);
+                        await _context.SaveChangesAsync();
+
                     _logger.LogInformation("User created a new account with password.");
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -128,7 +144,7 @@ namespace Mortaria.Areas.Identity.Pages.Account
                     else
                     {
                         await _signInManager.SignInAsync(user, isPersistent: false);
-                        return LocalRedirect(returnUrl);
+                        return LocalRedirect("/Home/Index");
                     }
                 }
                 foreach (var error in result.Errors)

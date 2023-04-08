@@ -1,0 +1,265 @@
+@page
+@model Mortaria.Areas.Identity.Pages.Account.maiCRM.CustomerDetailsModel
+@{
+    ViewData["Title"] = "Customer Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+<form method="post">
+    <input type="hidden" asp-for="Customer.Id" />
+    <div class="form-group">
+        <label asp-for="Customer.FirstName"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.FirstName" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.FirstName</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.LastName"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.LastName" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.LastName</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.AccountName"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.AccountName" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.AccountName</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.Title"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.Title" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.Title</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.BusinessPhone"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.BusinessPhone" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.BusinessPhone</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.Email"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.Email" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.Email</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.MobilePhone"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.MobilePhone" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.MobilePhone</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.Direct"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.Direct" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.Direct</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.Address"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.Address" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.Address</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.City"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.City" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.City</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.State"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.State" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.State</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.TimeZone"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.TimeZone" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.TimeZone</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.Industry"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.Industry" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.Industry</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.RevenueInMillions"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.RevenueInMillions" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.RevenueInMillions</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.Priority"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.Priority" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.Priority</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.CallCount"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.CallCount" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.CallCount</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.RelationshipType"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.RelationshipType" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.RelationshipType</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.QuickNote"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.QuickNote" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.QuickNote</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.QualityNote"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.QualityNote" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.QualityNote</p>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.Appointments.Count"></label>
+        @if (Model.IsEditMode)
+        {
+            <input asp-for="Customer.Appointments.Count" class="form-control" />
+        }
+        else
+        {
+            <p>@Model.Customer.Appointments.Count</p>
+        }
+    </div>
+
+ @if (Model.IsEditMode)
+    {
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a asp-page="./CustomerDetails" asp-route-id="@Model.Customer.Id" class="btn btn-secondary">Cancel</a>
+    }
+    else
+    {
+        <a asp-page="./CustomerDetails" asp-route-id="@Model.Customer.Id" asp-route-isEditMode="true" class="btn btn-primary">Edit</a>
+        <a asp-page="./CustomerListNew" class="btn btn-secondary">Back to Customer List</a>
+    }
+</form>
+
+<h2>Appointments</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var appointment in Model.Customer.Appointments)
+        {
+            <tr>
+                <td>@appointment.Date.ToShortDateString()</td>
+                <td>@appointment.Time.ToShortTimeString()</td>
+                <td>@appointment.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p><a asp-page="./CustomerListNew">Back to Customer List</a></p>
+

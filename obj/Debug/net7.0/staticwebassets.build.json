@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FMVsXT8Fz8YzXphzCBMM2qEx8JcG2jS3EzaY4Y5nVTk=",
+  "Hash": "h7tceqa7wIORqBXBK0WWfejxfAoKKyeeTUCd6jWcmUU=",
   "Source": "Mortaria",
   "BasePath": "_content/Mortaria",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Mortaria.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\wwwroot\\css\\home.css",
+      "SourceId": "Mortaria",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\wwwroot\\",
+      "BasePath": "_content/Mortaria",
+      "RelativePath": "css/home.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\home.css"
+    },
+    {
       "Identity": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\wwwroot\\css\\site.css",
       "SourceId": "Mortaria",
       "SourceType": "Discovered",
@@ -1103,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\wwwroot\\js\\home.js",
+      "SourceId": "Mortaria",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\wwwroot\\",
+      "BasePath": "_content/Mortaria",
+      "RelativePath": "js/home.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\home.js"
     },
     {
       "Identity": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\wwwroot\\js\\site.js",

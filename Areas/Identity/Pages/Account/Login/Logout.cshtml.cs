@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Mortaria.Areas.Identity.Pages.Account
+namespace Mortaria.Areas.Identity.Pages.Account.Login
 {
     public class LogoutModel : PageModel
     {

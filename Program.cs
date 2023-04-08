@@ -2,17 +2,19 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using Mortaria.Authorization;
 using Mortaria.Data;
-
-
 
 var builder = WebApplication.CreateBuilder(args);
 // Add this line to print the connection string to the console
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
+//realtime complier (remove in production)
+builder.Services.AddRazorPages()
+    .AddRazorRuntimeCompilation();
+
 
 
 //razor pages builder: builder.Services.AddRazorPages(options => options.Conventions.AddAreaPageRoute("Identity", "/Account/Register", "Register"));
@@ -35,10 +37,14 @@ builder.Services.AddAuthorization(options =>
 });
 builder.Services.AddSingleton<IAuthorizationHandler, SubscriptionHandler>();
 builder.Services.AddSingleton<IEmailSender, DummyEmailSender>();
-
+builder.Services.AddTransient<SeedData>();
 
 
 var app = builder.Build();
+
+using var scope = app.Services.CreateScope();
+//var seedData = scope.ServiceProvider.GetRequiredService<SeedData>();
+await SeedData.Initialize(scope.ServiceProvider);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
