@@ -46,3 +46,19 @@ button.accept-policy[b-oprtjt002t] {
   white-space: nowrap;
   line-height: 60px;
 }
+
+.sidebar[b-oprtjt002t] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px; /* Adjust the width according to your preference */
+  background-color: #f8f9fa; /* Adjust the background color */
+  overflow-y: auto; /* Enable scrolling if the content height exceeds the sidebar height */
+  padding: 1rem;
+}
+
+/* Apply a left margin to the main content area to avoid overlapping with the sidebar */
+.main-content[b-oprtjt002t] {
+  margin-left: 250px; /* This value should match the width of the sidebar */
+}

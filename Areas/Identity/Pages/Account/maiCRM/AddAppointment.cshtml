@@ -1,0 +1,36 @@
+@page
+@model Mortaria.Areas.Identity.Pages.Account.maiCRM.AddAppointmentModel
+@{
+    ViewData["Title"] = "Add Appointment";
+}
+
+<h2>Add Appointment</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="customerSelect">Customer:</label>
+        <select class="form-control" id="customerSelect" asp-for="Input.CustomerId">
+            @foreach (var customer in Model.Customers)
+            {
+                <option value="@customer.Id">@customer.AccountName</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" class="form-control" id="date" asp-for="Input.Date">
+    </div>
+
+    <div class="form-group">
+        <label for="time">Time:</label>
+        <input type="time" class="form-control" id="time" asp-for="Input.Time">
+    </div>
+
+    <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea class="form-control" id="description" rows="3" asp-for="Input.Description"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Appointment</button>
+</form>

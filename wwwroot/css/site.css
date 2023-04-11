@@ -19,4 +19,78 @@ html {
 
 body {
   margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+/* Navbar */
+.sidebar {
+  padding: 1rem;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  z-index: 1000; /* Ensures the sidebar stays on top of other elements */
+  margin-top:60px;
+}
+
+.nav-link {
+  padding: 8px 16px; /* Adjust these values as needed */
+  margin: 0; /* Remove any additional margin */
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the footer stays on top of other elements */
+}
+
+.main-content {
+  margin-top: 4rem;
+  margin-left: 240px; /* Adjust this value according to the width of your sidebar */
+  padding-right: 0;
+  width: calc(100% - 240px); /* Add this line to stretch the main content based on the width of the sidebar */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensures the header stays on top of other elements */
+  background-color: white;
+}
+
+.header-logo {
+  width: 50px; /* Adjust the size as needed */
+  height: auto;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-title {
+  font-size: 1.25rem; /* Adjust the size as needed */
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.search-container {
+  width: 50%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
 }

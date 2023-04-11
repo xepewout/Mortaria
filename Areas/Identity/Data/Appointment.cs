@@ -7,7 +7,7 @@ namespace Mortaria.Data{
     public int CustomerId { get; set; }
     public Customer Customer { get; set; }
     public DateTime Date { get; set; }
-    public DateTime Time { get; set; }
+    public TimeSpan Time { get; set; }
     public string Description { get; set; }
 
     // Add any other relevant fields for the appointment
