@@ -2,17 +2,14 @@
     ViewData["Title"] = "Home Page";
 }
 <head>
-    <link rel="stylesheet" href="~/css/home.css">
 </head>
 
 <body>
   <div class="section-container">
+    <div id='calendar'>@await Component.InvokeAsync("Calendar")</div>
     <div class="section" id="finances">Finances</div>
-    <div class="section" id="appointments">Upcoming Appointments</div>
-    <div class="section" id="website-dashboard">Website Dashboard</div>
-    <div class="section" id="ai-assistant">AI Assistant</div>
-    <div class="section" id="cadence-marketing">Cadence Marketing</div>
-    <div class="section" id="market-insights">Market Insights</div>
   </div>
+
+
 </body>
 <script src="~/js/home.js"></script>

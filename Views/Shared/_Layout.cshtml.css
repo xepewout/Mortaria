@@ -1,5 +1,5 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+for details on configuring this project to bundle and minify static web assets. 
 
 a.navbar-brand {
   white-space: normal;
@@ -52,13 +52,17 @@ button.accept-policy {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 250px; /* Adjust the width according to your preference */
-  background-color: #f8f9fa; /* Adjust the background color */
-  overflow-y: auto; /* Enable scrolling if the content height exceeds the sidebar height */
+  width: 250px; /* Adjust the width according to your preference 
+  background-color: #f8f9fa; /* Adjust the background color 
+  overflow-y: auto; /* Enable scrolling if the content height exceeds the sidebar height 
   padding: 1rem;
 }
 
-/* Apply a left margin to the main content area to avoid overlapping with the sidebar */
+/* Apply a left margin to the main content area to avoid overlapping with the sidebar 
 .main-content {
-  margin-left: 250px; /* This value should match the width of the sidebar */
+  margin-left: 250px; /* This value should match the width of the sidebar 
 }
+
+.nav-item{
+  border-color: #00cc55;
+}*/

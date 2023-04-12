@@ -30,11 +30,11 @@ body {
   top: 0;
   left: 0;
   overflow-x: hidden;
-  z-index: 1000; /* Ensures the sidebar stays on top of other elements */
   margin-top:60px;
 }
 
 .nav-link {
+ 
   padding: 8px 16px; /* Adjust these values as needed */
   margin: 0; /* Remove any additional margin */
 }
@@ -44,7 +44,6 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 1000; /* Ensures the footer stays on top of other elements */
 }
 
 .main-content {
@@ -63,7 +62,6 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Ensures the header stays on top of other elements */
   background-color: white;
 }
 

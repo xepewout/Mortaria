@@ -641,3 +641,5 @@ C:\Users\jorry\Documents\GitHub\Mortaria\obj\Debug\net7.0\refint\Mortaria.dll
 C:\Users\jorry\Documents\GitHub\Mortaria\obj\Debug\net7.0\Mortaria.pdb
 C:\Users\jorry\Documents\GitHub\Mortaria\obj\Debug\net7.0\Mortaria.genruntimeconfig.cache
 C:\Users\jorry\Documents\GitHub\Mortaria\obj\Debug\net7.0\ref\Mortaria.dll
+C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\package-lock.json
+C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\package.json

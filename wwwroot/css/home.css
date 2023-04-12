@@ -1,12 +1,8 @@
-body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .section-container {
+/* .section-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
+  } 
   
   .section {
     width: 30%;
@@ -16,10 +12,14 @@ body {
     margin: 1em;
     padding: 1em;
     position: relative;
-  }
+  } 
   
   .section:hover {
     cursor: pointer;
     background-color: #eee;
-  }
+  } 
   
+  #calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}   */
