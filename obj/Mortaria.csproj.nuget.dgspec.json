@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\Mortaria.csproj": {}
+    "C:\\Users\\Frederick Nguyen\\Documents\\GitHub\\Mortaria-main\\Mortaria-main\\Mortaria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\Mortaria.csproj": {
+    "C:\\Users\\Frederick Nguyen\\Documents\\GitHub\\Mortaria-main\\Mortaria-main\\Mortaria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\Mortaria.csproj",
+        "projectUniqueName": "C:\\Users\\Frederick Nguyen\\Documents\\GitHub\\Mortaria-main\\Mortaria-main\\Mortaria.csproj",
         "projectName": "Mortaria",
-        "projectPath": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\Mortaria.csproj",
-        "packagesPath": "C:\\Users\\jorry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jorry\\Documents\\GitHub\\Mortaria\\obj\\",
+        "projectPath": "C:\\Users\\Frederick Nguyen\\Documents\\GitHub\\Mortaria-main\\Mortaria-main\\Mortaria.csproj",
+        "packagesPath": "C:\\Users\\Frederick Nguyen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Frederick Nguyen\\Documents\\GitHub\\Mortaria-main\\Mortaria-main\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jorry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Frederick Nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

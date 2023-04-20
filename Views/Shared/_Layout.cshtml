@@ -4,32 +4,52 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Mortaria</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <!-- <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />  -->
+    <!-- <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="~/css/styles.css" type="text/css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/upgrade.css" type="text/css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/register.css" type="text/css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/login.css" type="text/css" asp-append-version="true" />
+    <script language="JavaScript" type="text/javascript" src="~/js/site.js"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="header-content">
-            <h1 class="header-title">Mortaria</h1>
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Search...">
-            </div>
-            <div class="logo-container">
-                <img src="path/to/your/logo.png" alt="Logo" class="header-logo" />
+    <section id = "landing__header">
+        <div class = "container">
+            <div class = "row">
+                <div class="header__container">
+                    <div class="header__content header-content">
+                        <!-- <h1 class="header__title header-title">Mortaria</h1> -->
+                        <div class="logo__container logo-container">
+                            <!-- <h1 class="header__title header-title">Mortaria</h1> -->
+                            <img src="path/to/your/logo.png" alt="Logo" class="header__logo header-logo" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container-fluid d-flex flex-row">
-        <div class="sidebar col-md-3 col-lg-2 d-md-block">
-           <ul class="nav flex-column">
-                <partial name="_LoginPartial" />
-            </ul>
-        </div>
-        <div class="main-content col-md-9 col-lg-10">
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
+    <div class = "container">
+        <div class = "row">
+            <div class="midsection__container">
+                <div class="container__fluid container-fluid d-flex flex-row">
+                    <div class="sidebar col-md-3 col-lg-2 d-md-block">
+                        <h1 class="header__title header-title">Mortaria</h1>
+                        <div class="search__container search-container">
+                            <input type="text" class="search__input search-input" placeholder="Search...">
+                        </div>
+                    <ul class="nav flex-column">
+                            <partial name="_LoginPartial" />
+                        </ul>
+                    </div>
+                    <div class="main__content main-content col-md-9 col-lg-10">
+                        <main role="main" class="pb-3">
+                            @RenderBody()
+                        </main>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

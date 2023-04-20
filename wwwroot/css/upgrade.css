@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+a:visited{
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.container{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.row{
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+/* body {
+  padding-top: 24px;
+  padding-bottom: 24px;
+} */
+
+.purple{
+    color: rgba(100,21,255,1);
+}
+
+/*color all text of center field white*/
+.white{
+    color: white !important;
+  }
+
+/* UPGRADE PAGE */
+
+/*heading container grouped column and center*/
+.pricing__heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+}
+
+/*letter spacing and margin*/
+.pricing__heading--section-title{
+    font-size: 28px;
+    font-weight: 500;
+    margin: 8px 0;
+    letter-spacing: 0.1em;
+}
+
+/*increase font size and weight*/
+.pricing__heading--title{
+    color: #243E63;
+    font-size: 36px;
+    font-weight: 900;
+    margin: 8px 0;
+}
+
+/*set max width to fit, line height */
+.pricing__heading--para{
+    max-width: 36rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 16px;
+    font-size: 18px;
+    color: #7C8BA1;
+    font-weight: 500;
+    line-height: 1.625;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/*container for plans*/
+.plans{
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*3 plans side by side */
+.plan{
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CBD5E0;
+    border-radius: 5%;
+    margin-right: 36px;
+}
+
+/*left has top border, uses top-left and
+top-right radius to curve top border */
+.plan__left{
+    border-top: 8px solid rgba(56, 178, 172, 0.55);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*right has top border, uses top-left and
+top-right radius to curve top border */
+.plan__right{
+    border-top: 8px solid rgba(254, 178, 178, 1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*right needs top border, uses top-left and
+top-right radius to curve top border, we need
+border so height doesnt change. background color is 
+gradiant */
+.plan__center{
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    border-top: 8px solid rgb(76, 81, 191);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*top section border and text location*/
+.plan__top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #CBD5E0;
+    padding: 32px;
+}
+
+/*top section font and text location*/
+.plan__top--title{
+    font-size: 20px;
+    padding: 32px 24px auto;
+    margin-bottom: 16px;
+
+}
+
+/*top section price font*/
+.plan__top--price{
+    font-size: 56px;
+    margin-bottom: 16px;
+}
+
+/*top section period font and color */
+.plan__top--period{
+    font-size: 18px;
+    color: #7C8BA1;
+}
+
+/*bottom box padding*/
+.plan__bottom{
+    padding: 36px;
+}
+
+/*middle section border and text location*/
+.plan__middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #CBD5E0;
+    padding: 2px;
+}
+
+/*middle text location*/
+.plan__middle--title{
+    font-size: 22px;
+    margin: 16px 0;
+}
+
+/*middle desc location and font*/
+.plan__middle--desc{
+    font-size: 18px;
+    color: #7C8BA1;
+    font-weight: 500;
+    margin: 12px 0;
+}
+
+/*button has padding and border radius,
+centered using margin*/
+.button__buy-1{
+    display: flex;
+    margin: 0 auto;
+    padding: 16px 48px;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    border: none;
+    border-radius: 56px;
+    color: white;
+    font-weight: 700;
+    transition: all 400ms ease;
+    font-size: 16px;
+}
+
+.button__buy-2{
+    display: flex;
+    margin: 0 auto;
+    padding: 16px 48px;
+    background: white;
+    border: none;
+    border-radius: 56px;
+    color: #6415FF;
+    font-weight: 700;
+    transition: all 400ms ease;
+    font-size: 16px;
+}
+
+
+/*button has padding and border radius,
+centered using margin*/
+.button__buy-3{
+    display: flex;
+    margin: 0 auto;
+    padding: 16px 48px;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    border: none;
+    border-radius: 56px;
+    color: white;
+    font-weight: 700;
+    transition: all 400ms ease;
+    font-size: 16px;
+}
+
+/*
+when buttons are hovered, they appear bigger
+have cursor, and turn darker using filter.
+*/
+
+.button__buy-1:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.button__buy-2:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.button__buy-3:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+
+/*
+when buttons are pressed, they move to signal being pressed
+*/
+.button__buy-1:active{
+    transform: translateY(2px);
+}
+
+.button__buy-2:active{
+    transform: translateY(2px);
+}
+
+.button__buy-3:active{
+    transform: translateY(2px);
+}
+

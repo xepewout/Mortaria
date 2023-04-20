@@ -4,9 +4,77 @@
     ViewData["Title"] = "Upgrade";
 }
 
-<h1>Upgrade</h1>
+<!-- <form method="post">
+    <input class="button__buy-basic" type="submit" asp-page-handler="BuyBasic" value="Buy Basic Plan" />
+    <input class="button__buy-premium" type="submit" asp-page-handler="BuyPremium" value="Buy Premium Plan" />
+</form> -->
 
-<form method="post">
-    <input type="submit" asp-page-handler="BuyBasic" value="Buy Basic Plan" />
-    <input type="submit" asp-page-handler="BuyPremium" value="Buy Premium Plan" />
-</form>
+ <section id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="pricing__container">
+                    <div class="pricing__heading">
+                        <h1 class="pricing__heading--section-title"><span class="purple">UPGRADE</span></h1>
+                        <h1 class="pricing__heading--title">Reasonable & Flexible <span class="purple">Plans</span></h1>
+                        <p class="pricing__heading--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu.</p>
+                    </div>
+                </div>
+                <div class="plans">
+                    <div class="plan plan__left">
+                        <div class="plan__top">
+                            <h1 class="plan__top--title">BASIC PLAN</h1>
+                            <h1 class="plan__top--price">$49.99</h1>
+                            <h1 class="plan__top--period">MONTHLY</h1>
+                        </div>
+                        <div class="plan__middle">
+                            <h1 class="plan__middle--title">For Individuals</h1>
+                            <h1 class="plan__middle--desc">Modern and User-Friendly Website</h1>
+                            <h1 class="plan__middle--desc">Easy Appointment Management</h1>
+                            <h1 class="plan__middle--desc">Marketing & Sales Tools</h1>
+                            <h1 class="plan__middle--desc">Basic Assistance</h1>
+                            <h1 class="plan__middle--desc">Basic Support</h1>
+                        </div>
+                        <form method="post" class ="plan__bottom">
+                            <input class="button__buy-1" type="submit" asp-page-handler="BuyBasic" value="Buy Basic Plan" />
+                        </form>
+                    </div>
+                    <div class="plan plan__center">
+                        <div class="plan__top">
+                            <h1 class="plan__top--title white">BUSINESS</h1>
+                            <h1 class="plan__top--price white">$99.99</h1>
+                            <h1 class="plan__top--period white">MONTHLY</h1>
+                        </div>
+                        <div class="plan__middle">
+                            <h1 class="plan__middle--title white">For Small Businesses</h1>
+                            <h1 class="plan__middle--desc white">Modern and User-Friendly Website</h1>
+                            <h1 class="plan__middle--desc white">Easy Appointment Management</h1>
+                            <h1 class="plan__middle--desc white">Strategic Marketing </h1>
+                            <h1 class="plan__middle--desc white">Priority Assistance</h1>
+                            <h1 class="plan__middle--desc white">Upgraded Support</h1>
+                        </div>
+                        <form method="post" class ="plan__bottom">
+                            <input class="button__buy-2" type="submit" asp-page-handler="BuyBasic" value="Buy Business Plan" />
+                        </form>
+                    </div>
+                    <div class="plan plan__right">
+                        <div class="plan__top">
+                            <h1 class="plan__top--title">PREMIUM PLAN</h1>
+                            <h1 class="plan__top--price">$199.99</h1>
+                            <h1 class="plan__top--period">MONTHLY</h1>
+                        </div>
+                        <div class="plan__middle">
+                            <h1 class="plan__middle--title">For Companies</h1>
+                            <h1 class="plan__middle--desc">Modern and User-Friendly Websites</h1>
+                            <h1 class="plan__middle--desc">CRM & Website Security Features</h1>
+                            <h1 class="plan__middle--desc">Marketing & Sales Tools</h1>
+                            <h1 class="plan__middle--desc">Appointment Scheduling tool</h1>
+                            <h1 class="plan__middle--desc">On-demand Consultative Support</h1>
+                        </div>
+                        <form method="post" class ="plan__bottom">
+                            <input class="button__buy-3" type="submit" asp-page-handler="BuyPremium" value="Buy Premium Plan" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+a:visited{
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.container{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.row{
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+/* body {
+  padding-top: 24px;
+  padding-bottom: 24px;
+} */
+
+.purple{
+    color: rgba(100,21,255,1);
+}
+
+/* LOGIN PAGE */
+
+.login__container{
+    display: flex;
+    flex-direction: row;
+}
+
+.logininfo__container{
+    width: 50%;
+}
+
+.logininfo__container2{
+    width: 50%;
+}
+
+.checkbox{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#login-submit{
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 365px;
+    background: rgba(100,21,255,1);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 400;
+    transition: all 400ms ease;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+#login-submit:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+#forgot-password{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#register-account{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#resend-confirmation{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/*STEPS SECTION*/
+
+/*container for image and description*/
+.steps__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.steps__description{
+    padding-left: 24px;
+}
+
+/*image is 50 percent of step container*/
+.steps__img{
+    padding-top: 48px;
+    width: 60%;
+}
+
+/*increase font size and weight*/
+.steps__heading--title{
+    color: #243E63;
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+/*containers step number and step info*/
+.step{
+    display: flex;
+    padding-top: 18px;
+}
+
+/*light color font with higher font weight,
+increase padding and change color*/
+.step__number{
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 1;
+    color: #CBD5E0;
+    padding-right: 16px;
+}
+
+/*title of step*/
+.step__title{
+    line-height: 1;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 12px;
+    color:#243E63
+}
+
+/*info of step*/
+.step__info{
+    max-width: 36rem;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #7C8BA1;
+    font-weight: 500;
+    line-height: 2;
+    padding-left: 18px;
+    padding-right: 112px;
+}
+
+.steps__heading--section-title{
+    font-size: 24px;
+    margin: 8px 0;
+    letter-spacing: 0.1em;
+}
+
+.step__para{
+    letter-spacing: 0.1em;
+}
+

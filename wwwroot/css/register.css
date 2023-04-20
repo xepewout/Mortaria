@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+a:visited{
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.container{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.row{
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+/* body {
+  padding-top: 24px;
+  padding-bottom: 24px;
+} */
+
+.purple{
+    color: rgba(100,21,255,1);
+}
+
+/* REGISTER PAGE */
+
+.register__container{
+    display: flex;
+    flex-direction: row;
+}
+
+.info__container{
+    width: 50%;
+}
+
+.info__container2{
+    width: 50%;
+}
+
+.info__header--title{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.info__header--subtitle{
+    color: #243E63;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.info__label{
+    color: #7C8BA1;
+}
+
+.form__input{
+    margin-bottom: 16px;
+}
+
+.form__input--email{
+    margin-top: 16px;
+}
+
+.form__input--field{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 240px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.text-danger{
+    margin-top: 4px;
+    display: block;
+    color:red;
+}
+
+#registerSubmit{
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 345px;
+    background: rgba(100,21,255,1);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 400;
+    transition: all 400ms ease;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#registerSubmit:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+/*VALUES SECTION*/
+
+.values__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*element takes up 50% of the container*/
+.values__description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*title of section*/
+.values__heading--title{
+    color: #243E63;
+    font-size: 56px;
+    font-weight: 900;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+/*same as other sections*/
+.values__heading--para{
+    max-width: 36rem;
+    width: 100%;
+    margin-top: 16px;
+    font-size: 18px;
+    color: #7C8BA1;
+    font-weight: 500;
+    line-height: 2;
+}
+
+/*element takes up 50% of the container*/
+.values__img{
+    width: 50%; 
+}
+
+/*container for principles*/
+.values__principles{
+    display: flex;
+    flex-direction: column;
+    padding: 28px 0;
+    justify-content: space-between;
+}
+
+/*desc for left/right principles*/
+.values__principles--para{
+    max-width: 36rem;
+    width: 100%;
+    margin-top: 16px;
+    font-size: 18px;
+    color: #7C8BA1;
+    font-weight: 400;
+    line-height: 1.625;
+    margin-bottom: 16px;
+}
+
+/*title for left/right principles*/
+.values__principles--top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*padding and 50% border radius for
+circle around image */
+.dollar__img{
+    background-color: lightgreen;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+/*padding and 50% border radius for
+circle around image */
+.bag__img{
+    background-color: lightcoral;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+/*title for left/right principles*/
+.values__principles--title{
+    color: #243E63;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 16px;
+}

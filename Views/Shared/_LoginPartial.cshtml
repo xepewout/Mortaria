@@ -16,43 +16,80 @@
     var user = await UserManager.GetUserAsync(User);
     var isBasicUser = await UserIsInRoleAsync(user, "BasicUser");
     var isPremiumUser = await UserIsInRoleAsync(user, "PremiumUser");
-    <li class ="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+    <li class ="nav__item nav-item">
+        <span class='icon'>
+            <i class='fas fa-home'></i>
+        </span>
+        <a class="nav__link nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
     </li>
     if (isBasicUser || isPremiumUser)
     {
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/maiCRM/CustomerList">Customers</a>
+        <li class="nav__item nav-item">
+        <span class='icon'>
+            <i class='fas fa-user-friends'></i>
+        </span>
+            <a class="nav__link nav-link text-dark" asp-area="Identity" asp-page="/Account/maiCRM/CustomerList">Customers</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/maiCRM/Schedule">Schedule</a>
+        <li class="nav__item nav-item">
+            <span class='icon'>
+                <i class='fas fa-calendar'></i>
+            </span>
+            <a class="nav__link nav-link text-dark" asp-area="Identity" asp-page="/Account/maiCRM/Schedule">Schedule</a>
         </li>
     }
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login/Upgrade">Upgrade</a>
+    <li class="nav__item nav-item">
+        <span class='icon'>
+            <i class='fas fa-tachometer-alt'></i>
+        </span>
+        <a class="nav__link nav-link text-dark" asp-area="Identity" asp-page="/Account/Login/Upgrade">Upgrade</a>
     </li>
-    <li class="nav-item">
-        <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+    <li class="nav__item nav-item">
+        <span class='icon'>
+            <i class='fas fa-cog'></i>
+        </span>
+        <a id="manage" class="nav__link nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
     </li>
-    <li class="nav-item">
+    <li class="nav__item nav-item">
         <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Login/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-            <button id="logout" type="submit" class="nav-link btn btn-link text-dark border-0">Logout</button>
+            <button id="logout" type="submit" class="logout__button nav-link btn btn-link text-dark border-0">Logout</button>
         </form>
+    </li>
+    <li class="nav__item click" onclick="toggleContrast()"> 
+        <a href="#" class="nav__link darkmode__icon">
+            <span class='icon'><i class="fas fa-adjust"></i></span>
+        </a>
     </li>
 }
 else
 {
-    <li class ="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+    <li class ="nav__item nav-item">
+        <span class='icon'>
+            <i class='fas fa-home'></i>
+        </span>
+        <a class="nav__link nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link text-dark" id="register" asp-area="Identity" asp-page="/Account/Login/Register">Register</a>
+    <li class="nav__item nav-item">
+        <span class='icon'>
+            <i class='fas fa-desktop'></i>
+        </span>    
+        <a class="nav__link nav-link text-dark" id="register" asp-area="Identity" asp-page="/Account/Login/Register">Register</a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login/Login">Login</a>
+    <li class="nav__item nav-item">
+        <span class='icon'>
+            <i class='fas fa-user-friends'></i>
+        </span>
+        <a class="nav__link nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login/Login">Login</a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login/Upgrade">Upgrade</a>
+    <li class="nav__item nav-item">
+        <span class='icon'>
+            <i class='fas fa-tachometer-alt'></i>
+        </span>
+        <a class="nav__link nav-link text-dark" asp-area="Identity" asp-page="/Account/Login/Upgrade">Upgrade</a>
+    </li>
+    <li class="nav__item click" onclick="toggleContrast()"> 
+        <a href="#" class="nav__link darkmode__icon">
+            <span class='icon'><i class="fas fa-adjust"></i></span>
+        </a>
     </li>
 }
 </ul>
