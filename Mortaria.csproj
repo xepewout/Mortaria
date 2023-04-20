@@ -25,6 +25,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.5" />
+    <PackageReference Include="Pomelo.ENtityFrameworkCore.MySql" Version="7.0.0" />
   </ItemGroup>
 
 </Project>

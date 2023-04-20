@@ -643,6 +643,7 @@ C:\Users\jorry\Documents\GitHub\Mortaria\obj\Debug\net7.0\Mortaria.genruntimecon
 C:\Users\jorry\Documents\GitHub\Mortaria\obj\Debug\net7.0\ref\Mortaria.dll
 C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\package-lock.json
 C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\package.json
+<<<<<<< Updated upstream
 C:\Users\Frederick Nguyen\Documents\GitHub\Mortaria-main\Mortaria-main\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Frederick Nguyen\Documents\GitHub\Mortaria-main\Mortaria-main\bin\Debug\net7.0\appsettings.json
 C:\Users\Frederick Nguyen\Documents\GitHub\Mortaria-main\Mortaria-main\bin\Debug\net7.0\.runtimeconfig.json
@@ -1226,3 +1227,15 @@ C:\Users\Frederick Nguyen\Documents\GitHub\Mortaria-main\Mortaria-main\obj\Debug
 C:\Users\Frederick Nguyen\Documents\GitHub\Mortaria-main\Mortaria-main\obj\Debug\net7.0\Mortaria.pdb
 C:\Users\Frederick Nguyen\Documents\GitHub\Mortaria-main\Mortaria-main\obj\Debug\net7.0\Mortaria.genruntimeconfig.cache
 C:\Users\Frederick Nguyen\Documents\GitHub\Mortaria-main\Mortaria-main\obj\Debug\net7.0\ref\Mortaria.dll
+=======
+C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config
+C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\publish\package-lock.json
+C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\publish\package.json
+C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\.runtimeconfig.json
+C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json
+C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json
+C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\Mortaria.deps.json
+C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\Mortaria.runtimeconfig.json
+C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\MySqlConnector.dll
+C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+>>>>>>> Stashed changes

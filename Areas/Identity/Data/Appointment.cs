@@ -5,7 +5,7 @@ namespace Mortaria.Data{
 {
     public int Id { get; set; }
     public int CustomerId { get; set; }
-    public Customer Customer { get; set; }
+    //public Customer Customer { get; set; }
     public DateTime Date { get; set; }
     public TimeSpan Time { get; set; }
     public string Description { get; set; }

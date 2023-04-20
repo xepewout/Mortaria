@@ -9,7 +9,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
     ports:
-      - 5021:5021
+      - 443:443
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     volumes:

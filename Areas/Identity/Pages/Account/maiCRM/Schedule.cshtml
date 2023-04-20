@@ -7,7 +7,6 @@
 <h2>Schedule</h2>
 <div class="mb-3">
     <a class="btn btn-primary" asp-page="./AddAppointment">Add Appointment</a>
-    <a class="btn btn-secondary" asp-page="./AddCustomer">Add Customer</a>
 </div>
 
 <table class="table">
@@ -23,7 +22,11 @@
         @foreach (var appointment in Model.Appointments)
         {
             <tr>
-                <td>@appointment.Customer.AccountName</td>
+                @foreach (var customer in Model.Customers){
+                    if (customer.Id == appointment.CustomerId){
+                        <td>@customer.AccountName</td>
+                    }
+                }
                 <td>@appointment.Date.ToShortDateString()</td>
                 <td>@appointment.Time</td>
                 <td>@appointment.Description</td>

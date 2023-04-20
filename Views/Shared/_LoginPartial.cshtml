@@ -1,7 +1,8 @@
 @using Microsoft.AspNetCore.Identity
+@using Mortaria.Data
 @inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
-@inject RoleManager<IdentityRole> RoleManager
+@inject UserManager<IdentityUser> UserManager 
+@* @inject RoleManager<IdentityRole> RoleManager *@
 
 @functions {
     private async Task<bool> UserIsInRoleAsync(IdentityUser user, string roleName)

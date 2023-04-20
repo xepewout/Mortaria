@@ -22,7 +22,7 @@ namespace Mortaria.Areas.Identity.Pages.Account.maiCRM
         public async Task OnGetAsync()
         {
             Customers = await _context.Customers.ToListAsync();
-            Appointments = await _context.Appointments.Include(a => a.Customer).ToListAsync();
+            Appointments = await _context.Appointments.ToListAsync();
         }
     }
 }
