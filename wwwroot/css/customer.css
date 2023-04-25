@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+a:visited{
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.container{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.row{
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+/* body {
+  padding-top: 24px;
+  padding-bottom: 24px;
+} */
+
+.purple{
+    color: rgba(100,21,255,1);
+}
+
+/* SCHEDULE PAGE*/
+
+.schedule__container{
+    background-color: whitesmoke;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 20px;
+}
+
+.customer__title{
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.customer__table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2em;
+    max-width: 1600px;
+    width: 100%;
+}
+
+.customer__table table{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2em;
+    max-width: 1600px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.customer__table thead tr{
+    background-color: rgba(100,21,255,1);
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 24px;
+    width: 100%;
+}
+
+.customer__table th, td{
+    padding: 12px 48px;
+}
+
+.customer__table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.customer__table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}

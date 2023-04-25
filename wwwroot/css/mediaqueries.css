@@ -1,0 +1,57 @@
+@media (max-width: 1280px){
+    .values__principles{
+        visibility: hidden;
+    }
+  
+    .logininfo__container2{
+      visibility: hidden;
+    }
+  
+    .plans{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .plan{
+        margin-bottom: 36px;
+        margin-right: 0px;
+        width: 40%;
+    }
+
+    .schedule__container{
+        max-width: 500px;
+    }
+
+    .schedule__table{
+        font-size: 0.8em;
+        max-width: 800px;
+    }
+
+    /* .schedule__table .schedule__heading--description{
+        visibility: hidden;
+    } */
+
+    .schedule__table th, td{
+        padding: 12px 24px;
+    }
+
+    .schedule__table tbody tr,
+    .customer__table tbody tr{
+        border-bottom: none;
+    }
+
+    .customer__table{
+        font-size: 0.8em;
+        max-width: 800px;
+    }
+
+    .customer__table th, td{
+        padding: 12px 24px;
+    }
+
+    .customer__heading--description{
+        display: none;
+    }
+
+  }

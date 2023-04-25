@@ -4,35 +4,43 @@
     ViewData["Title"] = "Schedule";
 }
 
-<h2>Schedule</h2>
-<div class="mb-3">
-    <a class="btn btn-primary" asp-page="./AddAppointment">Add Appointment</a>
+<div class="container">
+    <div class="row">
+        <div class="schedule__container">
+            <h2 class="schedule__title"><span class="purple">Schedule</span></h2>
+            <div class="schedule__add mb-3">
+                <a class="schedule__button btn btn-primary" asp-page="./AddAppointment">Add Appointment</a>
+            </div>
+
+            <table class="schedule__table table">   
+                <thead >
+                    <tr>
+                        <th class="schedule__heading">Customer</th>
+                        <th class="schedule__heading">Date</th>
+                        <th class="schedule__heading">Time</th>
+                        <th class="schedule__heading schedule__heading--description">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var appointment in Model.Appointments)
+                    {
+                        <tr>
+                            @foreach (var customer in Model.Customers){
+                                if (customer.Id == appointment.CustomerId){
+                                    <td class="schedule__heading">@customer.AccountName</td>
+                                }
+                            }
+                            <td class="schedule__heading">@appointment.Date.ToShortDateString()</td>
+                            <td class="schedule__heading">@appointment.Time</td>
+                            <td class="schedule__heading schedule__heading--description">@appointment.Description</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div> 
+    </div>  
 </div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Customer</th>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var appointment in Model.Appointments)
-        {
-            <tr>
-                @foreach (var customer in Model.Customers){
-                    if (customer.Id == appointment.CustomerId){
-                        <td>@customer.AccountName</td>
-                    }
-                }
-                <td>@appointment.Date.ToShortDateString()</td>
-                <td>@appointment.Time</td>
-                <td>@appointment.Description</td>
-            </tr>
-        }
-    </tbody>
-</table>
+
 
 

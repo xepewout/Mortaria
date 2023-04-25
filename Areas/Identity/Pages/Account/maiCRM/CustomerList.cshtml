@@ -4,34 +4,40 @@
     ViewData["Title"] = "Customers";
 }
 
-<h1>@ViewData["Title"]</h1>
 
-<a class="button__add-customer btn btn-primary" asp-page="./AddCustomer">Add Customer</a>
+<div class="container">
+    <div class="row">
+        <div class="schedule__container">
+            <h1 class="customer__title"><span class="purple">@ViewData["Title"]<span></h1>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Business Phone</th>
-            <th>Email</th>
-            <th>Appointments</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var customer in Model.Customers)
-        {
-            <tr>
-                <td><a asp-page="./CustomerDetails" asp-route-id="@customer.Id">@customer.FirstName</a></td>
-                <td>@customer.LastName</td>
-                <td>@customer.BusinessPhone</td>
-                <td>@customer.Email</td>
-                <td>@customer.Appointments.Count</td>
-            </tr>
-        }
-    </tbody>
-</table>
+            <a class="button__add-customer btn btn-primary" asp-page="./AddCustomer">Add Customer</a>
+
+            <table class="customer__table">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Business Phone</th>
+                        <th>Email</th>
+                        <th class="customer__heading--description">Appointments</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var customer in Model.Customers)
+                    {
+                        <tr>
+                            <td><a asp-page="./CustomerDetails" asp-route-id="@customer.Id">@customer.FirstName</a></td>
+                            <td>@customer.LastName</td>
+                            <td>@customer.BusinessPhone</td>
+                            <td>@customer.Email</td>
+                            <td class="customer__heading--description">@customer.Appointments.Count</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
 
 

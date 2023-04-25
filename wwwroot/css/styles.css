@@ -345,3 +345,8 @@ a.active{
 .dark-theme .values__principles--title{
   color: #b3b3b3;
 }
+
+.dark-theme .schedule__container,
+.dark-theme .schedule__table tbody tr:nth-of-type(even) {
+  background-color: #282828;
+}

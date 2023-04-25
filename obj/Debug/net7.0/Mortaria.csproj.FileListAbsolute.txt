@@ -1239,3 +1239,5 @@ C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\publish\publish\publis
 C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\MySqlConnector.dll
 C:\Users\jorry\Documents\GitHub\Mortaria\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
 >>>>>>> Stashed changes
+C:\Users\Frederick Nguyen\Documents\GitHub\Mortaria-main\Mortaria-main\bin\Debug\net7.0\MySqlConnector.dll
+C:\Users\Frederick Nguyen\Documents\GitHub\Mortaria-main\Mortaria-main\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll

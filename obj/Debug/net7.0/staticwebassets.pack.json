@@ -1,6 +1,18 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Frederick Nguyen\\Documents\\GitHub\\Mortaria-main\\Mortaria-main\\wwwroot\\assets\\bag.svg",
+      "PackagePath": "staticwebassets\\assets\\bag.svg"
+    },
+    {
+      "Id": "C:\\Users\\Frederick Nguyen\\Documents\\GitHub\\Mortaria-main\\Mortaria-main\\wwwroot\\assets\\dollar sign.svg",
+      "PackagePath": "staticwebassets\\assets\\dollar sign.svg"
+    },
+    {
+      "Id": "C:\\Users\\Frederick Nguyen\\Documents\\GitHub\\Mortaria-main\\Mortaria-main\\wwwroot\\css\\customer.css",
+      "PackagePath": "staticwebassets\\css\\customer.css"
+    },
+    {
       "Id": "C:\\Users\\Frederick Nguyen\\Documents\\GitHub\\Mortaria-main\\Mortaria-main\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
@@ -11,6 +23,10 @@
     {
       "Id": "C:\\Users\\Frederick Nguyen\\Documents\\GitHub\\Mortaria-main\\Mortaria-main\\wwwroot\\css\\register.css",
       "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
+      "Id": "C:\\Users\\Frederick Nguyen\\Documents\\GitHub\\Mortaria-main\\Mortaria-main\\wwwroot\\css\\schedule.css",
+      "PackagePath": "staticwebassets\\css\\schedule.css"
     },
     {
       "Id": "C:\\Users\\Frederick Nguyen\\Documents\\GitHub\\Mortaria-main\\Mortaria-main\\wwwroot\\css\\site.css",
